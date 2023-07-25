@@ -18,7 +18,9 @@ export default function FinalPage()
             <h1 style={{fontFamily: 'Spline Sans, sans-serif'}}>We're preparing your order...</h1>
             <p style={font} className="lead"><span style={{fontWeight:"bold"}}>{name}</span> your order is placed</p>
             <p style={font} className="lead">We have shared your order details to <span style={{fontWeight:"bold"}}>{email}</span>!</p>
-            <p style={font} className="lead"> <Link to="/" style={{color:"black", fontWeight:"bold",textDecoration:"none"}}>Return to home</Link> </p>
+            <p style={font} className="lead">
+                <a style={{color:"black", fontWeight:"bold",textDecoration:"none", cursor:"pointer"}} href="/sugar">Return to home</a>
+            </p>
         </div>
     )
 }
